@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Placar ao Vivo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>⚽ Jogos de Hoje</h1>
+
+ 
+  <!-- Container dos filtros -->
+  <div id="filtros">
+    <input type="text" id="filtro-time" placeholder="Buscar por time..." />
+    
+    <select id="filtroCampeonato">
+      <option value="todos">Todos</option>
+    </select>
+
+    <select id="filtroData">
+        <option value="todas">Todas as datas</option>
+        <option value="hoje">Hoje</option>
+        <option value="ultimos3">Últimos 3 dias</option>
+        <option value="ultimos7">Últimos 7 dias</option>
+      </select>
+
+
+  </div>
+
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>Carregando jogos...</p>
+  </div>
+  <!-- Container onde os jogos serão carregados -->
+  <div id="jogos-container"></div>
+
+  <button id="carregar-mais" style="display: none;">Carregar mais</button>
+
+
+  <footer>
+    <h3>⚽ Projeto feito com Scorebat API | Desenvolvido por Gabriel</h3>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
